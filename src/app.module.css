@@ -1,0 +1,28 @@
+.app {
+  height: 100vh;
+  background-color: papayawhip;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+  grid-template-rows: min-content 1fr;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.links {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, min-content);
+}
+.link {
+  display: block;
+  text-decoration: none;
+  color: brown;
+  font-size: 16px;
+}

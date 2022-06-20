@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Link, Navigate, Route, Routes } from "react-router-dom";
+import styles from "./app.module.css";
+import Cards from "./examples/Cards";
+import Overloaded from "./examples/Overloaded";
+import Table from "./examples/Table";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <div className={styles.links}>
+        <Link to={"/table"} className={styles.link}>
+          Table
+        </Link>
+        <Link to={"/cards"} className={styles.link}>
+          Cards
+        </Link>
+        <Link to={"/overloaded"} className={styles.link}>
+          Overloaded
+        </Link>
+      </div>
+      <div className={styles.container}>
+        <Routes>
+          <Route path="/table" element={<Table />} />
+          <Route path="/cards" element={<Cards />} />
+          <Route path="/overloaded" element={<Overloaded />} />
+          <Route path="*" element={<Navigate to={"/table"} />} />
+        </Routes>
+      </div>
     </div>
   );
 }
