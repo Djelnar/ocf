@@ -2,7 +2,6 @@ import React from "react";
 import { Link, Navigate, Route, Routes } from "react-router-dom";
 import styles from "./app.module.css";
 import Cards from "./examples/Cards";
-import Overloaded from "./examples/Overloaded";
 import Table from "./examples/Table";
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
         <Routes>
           <Route path="/table" element={<Table />} />
           <Route path="/cards" element={<Cards />} />
-          <Route path="/overloaded" element={<Overloaded />} />
           <Route path="*" element={<Navigate to={"/table"} />} />
         </Routes>
       </div>

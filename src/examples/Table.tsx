@@ -31,9 +31,9 @@ const TableRow = ({ item, className, style }: TableRowProps) => {
       <div className={styles.col}>{item.age}</div>
       <div className={styles.col}>{item.county}</div>
       <div className={styles.col}>{item.cat}</div>
-      <button className={styles.col}>call</button>
+      <button>call</button>
       <div className={styles.col}>{time}</div>
-      <select className={styles.col}>
+      <select>
         <option>gender</option>
         <option>male</option>
         <option>female</option>
