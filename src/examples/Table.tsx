@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import classNames from "classnames";
+import { FixedSizeList } from "doom-scroll";
+import React, { useEffect, useState } from "react";
 import { data } from "./data";
 import styles from "./table.module.css";
-import { FixedSizeList } from "doom-scroll";
-import classNames from "classnames";
 
 type TableRowProps = {
   item: typeof data[0];

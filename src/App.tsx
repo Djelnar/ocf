@@ -14,9 +14,6 @@ function App() {
         <Link to={"/cards"} className={styles.link}>
           Cards
         </Link>
-        <Link to={"/overloaded"} className={styles.link}>
-          Overloaded
-        </Link>
       </div>
       <div className={styles.container}>
         <Routes>

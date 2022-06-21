@@ -1,9 +1,8 @@
-import React, { MouseEventHandler, useRef, useState } from "react";
-import styles from "./index.module.css";
 import classNames from "classnames";
-import { useEffect } from "react";
+import React, { MouseEventHandler, useEffect, useRef, useState } from "react";
+import styles from "./index.module.css";
 
-type TProps<T> = {
+type Props<T> = {
   items: T[];
   getKey: (item: T) => string;
   component: (props: {
@@ -21,7 +20,7 @@ const FixedSizeList = <T,>({
   component: Component,
   itemClassName,
   itemHeight,
-}: TProps<T>) => {
+}: Props<T>) => {
   const rootRef = useRef<HTMLDivElement | null>(null);
   const [scrollY, setScrollY] = useState(0);
   const [rootHeight, setRootHeight] = useState(0);
