@@ -45,7 +45,7 @@ const Table = () => {
   return (
     <FixedSizeList
       itemHeight={36}
-      items={data.slice(0, 1000)}
+      items={data}
       getKey={(item) => item.id}
       component={TableRow}
     />

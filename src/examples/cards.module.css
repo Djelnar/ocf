@@ -1,0 +1,13 @@
+.card {
+}
+
+.cardInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: pink;
+  width: 30%;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 8px;
+}

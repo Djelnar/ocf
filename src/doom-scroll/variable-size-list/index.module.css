@@ -1,0 +1,12 @@
+.root {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
+
+.item {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
